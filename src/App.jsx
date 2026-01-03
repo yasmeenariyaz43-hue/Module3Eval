@@ -9,4 +9,19 @@ const AppProvider = ({Children}) =>{
     localStorage.setItem('evalData',JSON.stringify(restaurants));
   },[restaurants]);
 }
-const 
+const login=(email,password)=>{
+  let role=null;
+  if (email === 'admin@gmail.com'&& password==='admin1234')role='admin';
+  else if (email === 'customer@gmail.com' && password ==='customer1234')role='customer';
+  if (role){
+    const userData={email,role};
+    setUser(userData);
+    localStorage.setItem('user',JSON.stringify(userData));
+    return role;
+  }
+  return null;
+
+};
+const logout= () =>{
+  
+}
