@@ -149,7 +149,7 @@ const AdminDashboard = () => {
 
   return (
     <div style={{ display: 'flex' }}>
-      <div style={{ width: '300px', padding: '20px', borderRight: '2px solid #c4b3b3ff', height: '100vh' }}>
+      <div style={{ width: '300px', padding: '20px', borderRight: '2px solid #d6cdcdff', height: '100vh' }}>
         <h3>Add Restaurant</h3>
         <form onSubmit={handleSubmit}>
           <input placeholder="Name" value={form.restaurantName} required onChange={e => setForm({...form, restaurantName: e.target.value})} style={{width:'90%'}}/><br/><br/>
